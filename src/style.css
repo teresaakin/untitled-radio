@@ -1,0 +1,47 @@
+/* overpass mono font */
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;700&display=swap');
+
+/* instrument serif font */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+/* inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+
+
+@tailwind base;
+@layer base {
+    body {
+        @apply bg-black text-white;
+    }
+}
+
+
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* pp playground font */
+@font-face {
+    font-family: 'PP Playground';
+    src: url('/fonts/PPPlayground-Thin.otf') format('opentype');
+    font-weight: 100; /* Thin */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PP Playground';
+    src: url('/fonts/PPPlayground-Light.otf') format('opentype');
+    font-weight: 300; /* Light */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PP Playground';
+    src: url('/fonts/PPPlayground-Medium.otf') format('opentype');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+  }
+  
