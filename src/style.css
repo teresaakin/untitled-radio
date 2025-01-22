@@ -12,18 +12,16 @@
 @tailwind base;
 @layer base {
     body {
-        @apply bg-black text-white;
+        @apply bg-customBlack text-white;
     }
 }
-
 
 @tailwind components;
 @tailwind utilities;
 
 
 
-
-/* pp playground font */
+/* PP Playground font */
 @font-face {
     font-family: 'PP Playground';
     src: url('/fonts/PPPlayground-Thin.otf') format('opentype');
@@ -44,4 +42,11 @@
     font-weight: 500; /* Medium */
     font-style: normal;
   }
+
   
+/* VCR OSD MONO font */
+@font-face {
+  font-family: 'VCR OSD MONO';
+  src: url('/fonts/VCR_OSD_MONO.ttf') format('truetype');
+  font-style: normal;
+}

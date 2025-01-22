@@ -34,12 +34,15 @@ export default {
       },
       colors: {
         customBlue: "#083AC4",
+        customBlack: "#0A0A0A",
+        loveBlue: "#D9E2FF",
       },
       fontFamily: {
         mono: ["Overpass Mono", "monospace"], // Overpass Mono
         serif: ["Instrument Serif", "serif"], // Instrument Serif
         playground: ["PP Playground", "sans-serif"], // PP Playground
         inter: ["Inter", "sans-serif"], // Inter font
+        vcr: ["VCR OSD MONO", "monospace"] // VCR OSD Mono
       },
     },
   },
