@@ -133,7 +133,7 @@ const AboutModal = () => {
       {/* Main Container: hosts the overlay/backdrop and the modal */}
 
       <div
-        className={`fixed inset-0 transition-all duration-300 ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`} // controls the visibility of the modal
+        className={`fixed inset-0 transition-all duration-300  ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`} // controls the visibility of the modal
       >
         {/* Overlay/Backdrop */}
         <div

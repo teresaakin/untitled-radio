@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+
+
 // import all pages
 import HeroPage from "./pages/HeroPage.jsx";
 import AboutModal from "./components/AboutModal.jsx";
