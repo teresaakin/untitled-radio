@@ -50,3 +50,139 @@
   src: url('/fonts/VCR_OSD_MONO.ttf') format('truetype');
   font-style: normal;
 }
+
+
+/* custom css for carousel */
+
+.cd-size{
+  width: 300px;
+  position: relative;
+  z-index: 1;
+}
+
+.cd-container {
+  transition: transform .5s ease-in-out;
+}
+
+.cd-container:hover {
+  transform: rotate(360deg);
+}
+
+
+/* to have continuous rotation on hover*/
+
+/* Apply continuous rotation
+.cd-container {
+  transition: transform 0.5s ease-in-out;
+} */
+
+/* Stop the rotation when hover ends */
+/* .cd-container:hover {
+  animation: rotate-animation 2s linear infinite; /* Infinite rotation animation 
+} */
+
+/* Keyframes for rotation animation */
+/* @keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+.carousel-container {
+  overflow-x: scroll;
+  height: 100%;
+  align-items: center;
+  /* padding: 200px 700px; */
+  /* 50vw = half viewport, 100px = half card width */
+  padding: 200px calc(50vw - 100px);
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+
+}
+
+
+
+/* animation for each CD */
+.cd-animation {
+  view-timeline-name: --scroll; /* just the name of it really*/
+  view-timeline-axis: inline; 
+  /* inline means the animation is triggered when the element moves horizontally (left ↔ right in left-to-right languages).*/
+  animation: linear highlight-card both;
+  animation-timeline: --scroll;
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  justify-content: center;
+  padding: 0 20px;
+  scroll-snap-align: center;
+  transition: transform 0.3s ease-in-out;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+
+
+}
+
+@keyframes highlight-card {
+  0%, 
+  100% {
+    transform: scale(0.8);
+    z-index: 1;
+  }
+
+  35%,
+  65% {
+    transform: scale(1);
+    z-index: 1;
+  }
+
+  50% {
+    transform: scale(1.2);
+    filter: none;
+    z-index: 10;
+  }
+}
+
+
+
+.cd-title, .cd-date {
+  position: absolute;
+  top: -80px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 20;
+  transform: translateY(20px);
+  /* Connect to the same timeline as the card */
+  animation: text-reveal both linear;
+  animation-timeline: --scroll;
+}
+
+
+.cd-date {
+  top: -35px;
+}
+
+
+
+
+/* Animation for text reveal */
+@keyframes text-reveal {
+  0%, 
+  35%,
+  65%,
+  100% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+
+  45%,
+  55% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+

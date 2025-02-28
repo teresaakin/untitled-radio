@@ -125,7 +125,7 @@ const AboutModal = () => {
       {/* Button to open the modal */}
       <button
         onClick={() => setIsOpen(true)} // Set isOpen to true when clicked
-        className="font-serif rounded-md py-1 px-4 text-loveBlue bg-transparent border border-loveBlue absolute top-12 right-16"
+        className="font-serif rounded-md py-1 px-4 text-loveBlue bg-transparent border border-loveBlue "
       >
         ABOUT
       </button>
