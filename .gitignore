@@ -1,0 +1,5 @@
+# going to use this file to tell github to NOT push my .env file
+
+# environments
+.env
+

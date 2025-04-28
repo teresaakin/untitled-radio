@@ -1,6 +1,7 @@
 // import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AboutModal from "../components/AboutModal";
+import TimeAndWeather from "../TimeAndWeather";
 
 const HeroPage = () => {
   const navigate = useNavigate(); // hook for navigation
@@ -14,10 +15,11 @@ const HeroPage = () => {
 
       {/* top bar section for hero page */}
       <div className="flex items-center justify-between mt-12 w-full h-12">
-        <div className="font-mono text-loveBlue tracking-widest ml-8">
+        {/* <div className="font-mono text-loveBlue tracking-widest ml-8">
           + TORONTO CANADA + 00:00 <br />
           37 DEGREES
-        </div>
+        </div> */}
+        <TimeAndWeather />
         <div className="mr-8">
           <AboutModal />
         </div>

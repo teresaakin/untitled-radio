@@ -125,7 +125,7 @@ const AboutModal = () => {
       {/* Button to open the modal */}
       <button
         onClick={() => setIsOpen(true)} // Set isOpen to true when clicked
-        className="font-serif rounded-md py-1 px-4 text-loveBlue bg-transparent border border-loveBlue "
+        className="font-serif rounded-md py-1 px-4 text-loveBlue bg-transparent border border-loveBlue"
       >
         ABOUT
       </button>
@@ -133,7 +133,7 @@ const AboutModal = () => {
       {/* Main Container: hosts the overlay/backdrop and the modal */}
 
       <div
-        className={`fixed inset-0 transition-all duration-300  ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`} // controls the visibility of the modal
+        className={`z-20 fixed inset-0 transition-all duration-300  ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`} // controls the visibility of the modal
       >
         {/* Overlay/Backdrop */}
         <div
