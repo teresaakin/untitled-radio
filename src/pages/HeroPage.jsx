@@ -7,7 +7,6 @@ const HeroPage = () => {
 
   return (
     // outer container with full height and hidden overflow
-    // allows for smooth transitions between sections
     <div className="relative h-screen flex flex-col overflow-hidden ">
       {/* hero section */}
 
