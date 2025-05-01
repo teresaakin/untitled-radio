@@ -86,16 +86,12 @@ const DisplayPlaylist = () => {
               {playlistData && playlistData.name}
             </div>
             <div className="font-mono text-sm text-white text-opacity-55">
-              5 TRACKS
+              3 TRACKS
             </div>
             <div className="font-serif text-lg mb-1">By: Teresa A.</div>
             <div className="max-w-screen-sm font-serif text-md">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat.
+              Yeah I'm gonna add the descriptions to each and every playlist later!
+              Stay tuned!!
             </div>
           </div>
         </div>
